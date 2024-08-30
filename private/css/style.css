@@ -1,0 +1,55 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    z-index: 9999;
+}
+
+main {
+    flex-grow: 1;
+}
+
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -9999;
+}
+
+.tooltip {
+    margin-top: 10px!important;
+}
+
+.bg-shadow {
+    background: rgba(0, 0, 0, .55);
+    backdrop-filter: blur(38px); /* Applique un flou de 10 pixels */
+    -webkit-backdrop-filter: blur(38px); /* Pour assurer la compatibilité avec certains navigateurs */
+}
+
+.py-155 {
+    padding-top: 155px;
+}
+
+@media (max-width: 768px) {
+    #logo {
+        display: none;
+    }
+    
+}
+
+@media (min-width: 992px) {
+    .py-lg-224 {
+        padding-top: 224px;
+    }
+    
+}
